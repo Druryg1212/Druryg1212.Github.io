@@ -237,5 +237,14 @@
     </div>
   </footer>
 
-  <script>
+<script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("formNote").textContent = "Message sent. Thanks for reaching out!";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
